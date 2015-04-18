@@ -1,0 +1,3 @@
+[submodule "wp-content/themes/mommod"]
+	path = wp-content/themes/mommod
+	url = https://github.com/Gameboyz/theme.git
