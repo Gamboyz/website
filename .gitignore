@@ -1,1 +1,9 @@
 wp-config.php
+fix-db-urls.php
+.htaccess
+.idea
+.Trash-1000/
+
+
+*.iml
+*~
