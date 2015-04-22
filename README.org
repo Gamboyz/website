@@ -37,9 +37,8 @@ Ubuntu 14.04 LTS, Apache2, PHP-5.5.16, MySQL
     - ~<ip_of_machine>/~<username>/wp-admin~
 12. if working, good, you're done
 
-* Updating Theme
-The theme is a separate git repo, it's included in this repo, but to keep it updated, it's not really obvious
-g
+* The Theme submodule
+The theme is a separate git repo -> [[https://github.com/Gameboyz/theme][theme]], it's included in this repo, but to keep it updated, it's not really obvious.
 ** Getting the newest commit
 1. go to the command line, and be in the root of the website folder
    - ~cd ~/public_html/~
@@ -47,7 +46,8 @@ g
    - ~git submodule init~
 3. update the submodule
    - ~git submodule update~
-4. Finished, you should have the newest version from the git repo
+4. *note* The submodule will only update if the the main repo has the newest linked version from the theme repo
+5. Finished, you should have the newest version from the git repo
 
 ** Updating the theme repo
 This is like editing any other git repo, but with a couple of added steps for the main repo.
