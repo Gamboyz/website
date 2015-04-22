@@ -1,5 +1,5 @@
 * Gameboyz Wordpress repo
-Developers: Jared, Sam, Blake
+** Wordpress v4.1.1
 
 * Tech
 Ubuntu 14.04 LTS, Apache2, PHP-5.5.16, MySQL
@@ -37,6 +37,32 @@ Ubuntu 14.04 LTS, Apache2, PHP-5.5.16, MySQL
     - ~<ip_of_machine>/~<username>/wp-admin~
 12. if working, good, you're done
 
-* Using Git
-** TODO
+* Updating Theme
+The theme is a separate git repo, it's included in this repo, but to keep it updated, it's not really obvious
+g
+** Getting the newest commit
+1. go to the command line, and be in the root of the website folder
+   - ~cd ~/public_html/~
+2. init the submodule (a git repo inside a git repo) of the theme
+   - ~git submodule init~
+3. update the submodule
+   - ~git submodule update~
+4. Finished, you should have the newest version from the git repo
 
+** Updating the theme repo
+This is like editing any other git repo, but with a couple of added steps for the main repo.
+
+
+*IMPORTANT:* Whenever updating the theme repo for the website repo, make sure it will be the only commit you will be making.
+
+
+1. go to the theme repo
+   - ~cd ~/public_html/wp-content/themes/mommod/~
+2. do your regualr commit (add the moded files, double check your working on the correct branch, commit with a proper message, so on)
+3. now go back to the root of the website repo
+   - ~cd ~/public_html~
+4. do a git add on the theme directory
+   - ~git add wp-content/themes/mommod/~
+5. commit the changes
+6. push to the correct branch
+7. Finish, hopefully all is well
