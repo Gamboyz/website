@@ -11,15 +11,17 @@ Ubuntu 14.04 LTS, Apache2, PHP-5.5.16, MySQL
    - ~cd~
 3. git clone the repo from github into your user public facing folder
    - ~git clone https://github.com/Gameboyz/website.git public_html~
-4. copy over the .htaccess, fix-db-urls.php and wp-config.php files to your public_html folder
-   - ~sudo cp /home/jared/public_html/.htaccess ~/public_html/~
-   - ~sudo cp /home/jared/public_html/fix-db-urls.php ~/public_html/~
-   - ~sudo cp /home/jared/public_html/wp-config.php ~/public_html/~
-5. open the .htaccess file in a text editor and replace all instances of jared with your username
-6. open up phpmyadmin in your web browser on your host machine (the vm doesnt have a web browser), login as root (this info you have to request)
+4. check that you can either ssh into the vm or use a file transfer program (winscp, filezilla, etc.)
+5. download these files from google drive: .htaccess, fix-db-urls.php and wp-config.php
+6. open the .htaccess file in a text editor and replace all instances of jared with your username
+7. copy the files from google drive to the vm
+   - ~.htaccess -> ~/public_html/~
+   - ~wp-config.php -> ~/public_html/~
+   - ~fix-db-urls.php -> ~/~
+8. open up phpmyadmin in your web browser on your host machine (the vm doesnt have a web browser), login as root (this info you have to request)
    1. ~ifconfig~ and find the ip address your machine is using
    2. ~<ip_of_machine>/phpmyadmin~
-7. in phpmyadmin 
+9. in phpmyadmin 
    1. go to the databases tab
    2. checkmark the ~wp_gameboyz~ database
    3. then click the ~Drop~ link just below on the same page
@@ -27,15 +29,15 @@ Ubuntu 14.04 LTS, Apache2, PHP-5.5.16, MySQL
    5. back in phpmyadmin, click on the import tab
    6. click on the browse button under File to Import and select the ~localhost.sql~ file (from where ever its stored)
    7. click go
-8. go to the command line of the vm, make sure you're in the public_html directory
-   - ~cd ~/public_html~
-9. run the fix-db-urls.php script
-   - ~./fix-db-urls.php~
-10. open up your web browser and check to see if the website loads
+10. go to the command line of the vm, make sure you're in the public_html directory
+    - ~cd ~/public_html~
+11. run the fix-db-urls.php script
+    - ~./fix-db-urls.php~
+12. open up your web browser and check to see if the website loads
     - ~<ip_of_machine>/~<username>~
-11. check login for wp-admin
+13. check login for wp-admin
     - ~<ip_of_machine>/~<username>/wp-admin~
-12. if working, good, you're done
+14. if working, good, you're done
 
 * The Theme submodule
 The theme is a separate git repo -> [[https://github.com/Gameboyz/theme][theme]], it's included in this repo, but to keep it updated, it's not really obvious.
