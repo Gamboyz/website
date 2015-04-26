@@ -4,6 +4,6 @@ fix-db-urls.php
 .idea
 .Trash-1000/
 
-
+wp-content/uploads/*
 *.iml
 *~
