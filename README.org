@@ -54,6 +54,7 @@ The theme is a separate git repo -> [[https://github.com/Gameboyz/theme][theme]]
 ** Updating the theme repo
 This is like editing any other git repo, but with a couple of added steps for the main repo.
 
+this should only be in the templates branch
 
 *IMPORTANT:* Whenever updating the theme repo for the website repo, make sure it will be the only commit you will be making.
 
