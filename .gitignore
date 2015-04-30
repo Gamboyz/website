@@ -3,7 +3,11 @@ fix-db-urls.php
 .htaccess
 .idea
 .Trash-1000/
+.DS_Store
+._*
 
 wp-content/uploads/*
+*.sublime-project
+*.sublime-workspace
 *.iml
 *~
