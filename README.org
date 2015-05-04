@@ -1,9 +1,17 @@
 * Gameboyz Wordpress repo
-** Wordpress v4.1.1
-
+** Wordpress v4.2.1
+- This version fixes a security loophole from admins viewing unapproved comments with executable code with in the comment a large memory size
 * Tech
-Ubuntu 14.04 LTS, Apache2, PHP-5.5.16, MySQL
-
+** Dev Environment
+- Ubuntu 14.04.2 LTS
+- Apache/2.4.7 (Ubuntu)
+- PHP
+  - 5.5.16
+- MySQL
+  - Ver 14.14
+  - Distrib 5.5.43
+  - debian-linux-gnu (x86_64)
+  - readline 6.3
 * VM setup wordpress
 1. make sure vm can ping and accept outside networks
    - ~ping google.com~
