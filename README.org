@@ -12,6 +12,19 @@
   - Distrib 5.5.43
   - debian-linux-gnu (x86_64)
   - readline 6.3
+* Schedule Outline
+** Sprint 2: <2015-04-27 Mon> to <2015-05-10 Sun>
+- Posts
+  - Need to be able to set a page layout (review, news)
+- Content
+  - need more, proper content
+- User Role Permission
+  - wp doesn't have this by default
+  - research for a suitable plugin
+
+** Sprint 1: <2015-04-13 Mon> to <2015-04-27 Mon>
+- Done +get wordpress in repo+
+
 * VM setup wordpress
 1. make sure vm can ping and accept outside networks
    - ~ping google.com~
