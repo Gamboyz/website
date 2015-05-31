@@ -6,6 +6,7 @@ fix-db-urls.php
 .DS_Store
 ._*
 
+wp-content/plugins/youneeq-panel/*
 wp-content/uploads/*
 *.sublime-project
 *.sublime-workspace
